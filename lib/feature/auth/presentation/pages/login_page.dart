@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_beyond/core/colors/colors.dart';
 
+import '../../../../core/widgets/custom_horizontal_divider.dart';
 import '../../../../core/widgets/default_text.dart';
 import '../../../../core/widgets/default_text_form_field.dart';
 import '../widgets/app_title.dart';
@@ -55,14 +56,21 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.03,),
             Row(
-
               children: [
-                Divider(color: beyondButton,height: 2,),
-                SizedBox(width: 16,),
-                Divider(color: beyondButton,height: 2,),
-
+                Expanded(child: CustomHorizontalDivider()),
+                SizedBox(width: 8,),
+                DefaultText(
+                  text: 'Or',
+                  fontColor: beyondButton,
+                  fontWeight: FontWeight.w800,
+                ),
+                SizedBox(width: 8,),
+                Expanded(child: CustomHorizontalDivider()),
               ],
             ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.03,),
+
+
           ],
         ),
       ),
