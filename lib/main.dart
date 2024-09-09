@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/bloc_observer.dart';
 import 'feature/auth/presentation/pages/landing_page.dart';
 import 'feature/auth/presentation/pages/login_page.dart';
+import 'feature/auth/presentation/pages/register_page.dart';
 import 'locator.dart' as di;
 
 void main() async{

@@ -44,7 +44,7 @@ class DefaultText extends StatelessWidget {
             color: fontColor ?? brush,
             fontWeight: fontWeight ?? FontWeight.w500,
             height: textHeight,
-            fontFamily: fontFamily ?? 'Amiri' ,
+            fontFamily: fontFamily ?? 'Lufga' ,
             wordSpacing: wordSpacing,
           ),
     );

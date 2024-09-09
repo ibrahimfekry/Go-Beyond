@@ -19,9 +19,9 @@ class AppTitle extends StatelessWidget {
         ),
         DefaultText(
           text: 'GoBeyond',
-          fontWeight: FontWeight.w900,
+          fontWeight: FontWeight.w800,
           fontSize: 28.sp,
-          fontFamily: 'Nunito',
+          // fontFamily: 'Nunito',
         )
       ],
     );
