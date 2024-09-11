@@ -6,7 +6,7 @@ class DefaultTextFormField extends StatefulWidget {
   DefaultTextFormField({
     Key? key,
     this.prefix,
-    this.hintText,
+    this.hintText = '',
     this.textInputType,
     this.height,
     this.suffix,
@@ -25,7 +25,9 @@ class DefaultTextFormField extends StatefulWidget {
     this.fontSize,
     this.border,
     this.maxLines,
-    this.readOnly
+    this.readOnly,
+    this.textAlign ,
+    this.maxLength,
   }) : super(key: key);
   double? height;
   Widget? prefix;
@@ -48,7 +50,8 @@ class DefaultTextFormField extends StatefulWidget {
   InputBorder? border;
   int? maxLines;
   bool? readOnly;
-
+  TextAlign? textAlign ;
+  int? maxLength;
   @override
   State<DefaultTextFormField> createState() => _DefaultTextFormFieldState();
 }
@@ -60,6 +63,7 @@ class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
   Widget build(BuildContext context) {
     return TextFormField(
       onTap: widget.onTap,
+      maxLength: widget.maxLength,
       readOnly: widget.readOnly ?? false,
       onChanged:(value)=> widget.onChanged?.call(value),
       validator: widget.validator,
@@ -67,7 +71,8 @@ class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
       controller: widget.controller,
       keyboardType: widget.textInputType,
       obscureText: widget.obscureText,
-      maxLines: widget.maxLines??1,
+      maxLines: widget.maxLines ?? 1,
+      textAlign: widget.textAlign ?? TextAlign.start,
       style: TextStyle(color:widget.hintColor?? black.withOpacity(0.7),fontSize:widget.fontSize,fontFamily: 'Uthman' ),
       decoration: InputDecoration(
         suffixIcon: widget.suffix,

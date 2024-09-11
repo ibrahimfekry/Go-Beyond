@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_beyond/core/colors/colors.dart';
-import 'package:go_beyond/core/widgets/default_button.dart';
 import 'package:go_beyond/feature/auth/presentation/cubit/login_state.dart';
-import '../../../../core/widgets/default_text.dart';
 import '../cubit/login_cubit.dart';
 import 'package:go_beyond/locator.dart' as di;
-
 import '../widgets/app_title.dart';
 import '../widgets/explore_widget.dart';
 import '../widgets/travel_widget.dart';
-import 'login_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});

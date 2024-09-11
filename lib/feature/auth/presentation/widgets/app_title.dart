@@ -11,12 +11,13 @@ class AppTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CircleAvatar(
-          maxRadius: 50,
-          backgroundImage: AssetImage(
-              'assets/images/mountain_login.png'),
-          backgroundColor: Colors.white,
-        ),
+        Image.asset('assets/images/mountain_login.png',width: 220.w,),
+        // CircleAvatar(
+        //   maxRadius: 50,
+        //   backgroundImage: AssetImage(
+        //       'assets/images/mountain_login.png',),
+        //   // backgroundColor: Colors.white,
+        // ),
         DefaultText(
           text: 'GoBeyond',
           fontWeight: FontWeight.w800,
