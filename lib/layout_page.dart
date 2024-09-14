@@ -4,7 +4,7 @@ import 'package:go_beyond/core/colors/colors.dart';
 import 'dart:ui' as ui;
 import 'core/widgets/icon_widget.dart';
 import 'feature/booking/pages/booking_page.dart';
-import 'feature/home/pages/home_page.dart';
+import 'feature/home/presentation/pages/home_page.dart';
 import 'feature/message/pages/message_page.dart';
 import 'feature/profile/pages/profile_page.dart';
 

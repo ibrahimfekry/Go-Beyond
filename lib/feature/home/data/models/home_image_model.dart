@@ -1,5 +1,3 @@
-part of 'home_page';
-
 class HomeImageModel{
   HomeImageModel(this.homeImage,this.siteName,this.siteRate,this.siteLocation,this.sitePrice,this.siteDate);
   String? homeImage;
@@ -8,6 +6,4 @@ class HomeImageModel{
   String? siteLocation;
   String? sitePrice;
   String? siteDate;
-
-
 }
